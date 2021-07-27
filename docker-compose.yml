@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  slack-github-hooks:
+    build: .
+    container_name: slack-github-hooks
+    command: uvicorn main:app --reload --port 9000 --host 0.0.0.0
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/code

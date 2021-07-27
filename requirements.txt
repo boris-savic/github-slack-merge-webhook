@@ -1,0 +1,9 @@
+
+# Fast API
+fastapi==0.67.0
+
+# Uvicorn
+uvicorn[standard]==0.14.0
+
+# Async HTTP library to make Slack POST
+httpx==0.18.2

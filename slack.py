@@ -1,0 +1,3 @@
+
+# Stringified JSON that we'll use to post to slack
+SLACK_PAYLOAD = '{{"blocks\":[{{\"type\":\"header\",\"text\":{{\"type\":\"plain_text\",\"text\":\"⚠️ New PR Merged\",\"emoji\":true}}}},{{\"type\":\"section\",\"fields\":[{{\"type\":\"mrkdwn\",\"text\":\"*Description:*\\n*{title}\\n\\n{description}\"}},{{\"type\":\"mrkdwn\",\"text\":\"*Created by:*\\n{author}\"}}]}},{{\"type\":\"section\",\"fields\":[{{\"type\":\"mrkdwn\",\"text\":\"*When:*\\n{timestamp}\"}}]}},{{\"type\":\"actions\",\"elements\":[{{\"type\":\"button\",\"text\":{{\"type\":\"plain_text\",\"emoji\":true,\"text\":\"Check on Github\"}},\"style\":\"primary\",\"url\":\"{html_url}\"}}]}}]}}'
