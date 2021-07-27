@@ -13,6 +13,24 @@ uvicorn main:app --reload --port 9000
 docker-compose up --build
 ```
 
+You can run the publicly hosted docker image:
+https://hub.docker.com/r/zitko/github-slack-merge-webhook
+
+```
+docker pull zitko/github-slack-merge-webhook:latest
+```
+
+```
+docker run -p 9000:9000 zitko/github-slack-merge-webhook:latest
+```
+
+
+## Usage
+
+- Create Slack App for Incoming Webhooks https://api.slack.com/messaging/webhooks
+- Create Github Webhook on your Repository and point it to your deployment of this project. 
+    * We're only listening to pull requests, no need to send other events
+
 
 ## Environment Variables
 
